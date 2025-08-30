@@ -1,0 +1,116 @@
+@import "./normalize.css";
+
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v30-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* === Colors === */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Grey */
+  --color-grey-800: #334253;
+  --color-grey-500: #67727e;
+  --color-grey-100: #e9ebf0;
+  --color-grey-50: #f5f6fa;
+
+  /* Purple */
+  --color-purple-600: #5357b6;
+  --color-purple-200: #c5c6ef;
+
+  /* Pink */
+  --color-pink-400: #ed6368;
+  --color-pink-200: #ffb8bb;
+
+  /* === Typography === */
+  --main-font: "Rubik", sans-serif;
+
+  /* Text Preset 1 */
+  --text-preset1-weight: 500; /* Medium */
+  --text-preset1-size: 2.4rem; /* 24px */
+  --text-preset1-line-height: 1.2; /* 120% */
+  --text-preset1-letter-spacing: 0;
+
+  /* Text Preset 2 (Medium) */
+  --text-preset2m-weight: 500;
+  --text-preset2m-size: 1.6rem; /* 16px */
+  --text-preset2m-line-height: 1.5; /* 150% */
+  --text-preset2m-letter-spacing: 0;
+
+  /* Text Preset 2 (Regular) */
+  --text-preset2r-weight: 400; /* Regular */
+  --text-preset2r-size: 1.6rem;
+  --text-preset2r-line-height: 1.5;
+  --text-preset2r-letter-spacing: 0;
+
+  /* Text Preset 3 */
+  --text-preset3-weight: 500; /* Medium */
+  --text-preset3-size: 1.3rem; /* 13px */
+  --text-preset3-line-height: 1.2; /* 120% */
+  --text-preset3-letter-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+  font-size: var(--text-preset2m-size);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
