@@ -1,0 +1,119 @@
+@import "./normalize.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/red-hat-text-v18-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/red-hat-text-v18-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/red-hat-text-v18-latin-700.woff2") format("woff2");
+}
+
+:root {
+  /* Colors */
+  --red: #c7380f;
+
+  --rose-900: #260f08;
+  --rose-500: #87635a;
+  --rose-400: #ad8a85;
+  --rose-300: #caafa7;
+  --rose-100: #f5eeec;
+  --rose-50: #fcf8f6;
+
+  --green: #1ea575;
+
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Typography */
+  --font-family: "Red Hat Text", sans-serif;
+
+  --text-preset-1-size: 5.6rem; /* 56px */
+  --text-preset-1-line: 1.2; /* 120% */
+
+  --text-preset-2-size: 2.4rem; /* 24px */
+  --text-preset-2-line: 1.25; /* 125% */
+
+  --text-preset-3-size: 1.6rem; /* 16px */
+  --text-preset-3-line: 1.5; /* 150% */
+
+  --text-preset-4-size: 1.4rem; /* 14px */
+  --text-preset-4-line: 1.5; /* 150% */
+
+  /* Spacing Scale */
+  --space-1100: 8.8rem; /* 88px */
+  --space-500: 4rem; /* 40px */
+  --space-400: 3.2rem; /* 32px */
+  --space-300: 2.4rem; /* 24px */
+  --space-200: 1.6rem; /* 16px */
+  --space-150: 1.2rem; /* 12px */
+  --space-100: 0.8rem; /* 8px */
+  --space-50: 0.4rem; /* 4px */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-primary);
+  font-size: var(--fs-preset-4);
+  line-height: var(--lh-100);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
