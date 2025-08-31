@@ -1,81 +1,37 @@
 @import "./normalize.css";
 
-/* inter-regular - latin */
+/* dm-sans-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/dm-sans-v16-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* inter-600 - latin */
+/* dm-sans-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/inter-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/dm-sans-v16-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* inter-700 - latin */
+/* dm-sans-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/inter-v19-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/dm-sans-v16-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-:root {
-  --main-family: "Inter", sans-serif;
-  --text-1-size: 6.4rem; /* 64px */
-  --text-1-line-height: 1.1;
-  --text-1-letter-spacing: -0.05em;
-
-  --text-2-size: 4.8rem; /* 48px */
-  --text-2-line-height: 1.1;
-  --text-2-letter-spacing: -0.05em;
-
-  --text-3-size: 3.2rem; /* 32px */
-  --text-3-line-height: 1.1;
-  --text-3-letter-spacing: -0.05em;
-
-  --text-4-size: 2.4rem; /* 24px */
-  --text-4-line-height: 1.2;
-  --text-4-letter-spacing: -0.05em;
-
-  --text-5-size: 2rem; /* 20px */
-  --text-5-line-height: 1.2;
-  --text-5-letter-spacing: -0.05em;
-
-  --text-6-size: 1.6rem; /* 16px Semi Bold */
-  --text-6-line-height: 1.5;
-  --text-6-letter-spacing: 0;
-
-  --text-6-regular-size: 1.6rem; /* 16px Regular */
-  --text-6-regular-line-height: 1.5;
-  --text-6-regular-letter-spacing: 0;
-
-  --text-7-bold-size: 1.4rem; /* 14px Bold */
-  --text-7-bold-line-height: 1.5;
-  --text-7-bold-letter-spacing: 0;
-
-  --text-7-regular-size: 1.4rem; /* 14px Regular */
-  --text-7-regular-line-height: 1.5;
-  --text-7-regular-letter-spacing: 0;
-
-  /* Colors */
-  --white: #ffffff;
-  --black: #000000;
-
-  --grey-500: #5e6e85;
-  --grey-300: #acc1de;
-
-  --blue-900: #253347;
-  --blue-500: #345ff6;
-  --blue-300: #b3d3f1;
-  --blue-100: #e1e7fe;
-
-  --gradient-1: linear-gradient(90deg, #d6fcfe 0%, #d6e6fe 100%);
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v43-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 *,
