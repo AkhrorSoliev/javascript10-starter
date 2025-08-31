@@ -1,0 +1,140 @@
+@import "./normalize.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/kumbh-sans-v26-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-slab-v35-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/space-mono-v17-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v17-latin-700.woff2") format("woff2");
+}
+
+:root {
+  /* === Colors === */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Blue shades */
+  --blue-950: #011627;
+  --blue-900: #023c61;
+  --blue-850: #011a37;
+  --blue-100: #f0f7ff;
+  --blue-50: #f2f7fa;
+
+  /* Grey */
+  --grey-400: #bcbcbc;
+  --grey-200: #e2e2e2;
+
+  /* Cyan */
+  --cyan-300: #07c8d8;
+
+  /* Red */
+  --red-400: #f87070;
+
+  /* Purple */
+  --purple-400: #b37dff;
+
+  /* Gradient */
+  --gradient-1: linear-gradient(90deg, #251943, #10172a);
+
+  /* === Typography === */
+  /* Base size 1rem = 10px (html { font-size: 62.5% }) */
+
+  /* Font families */
+  --font-kumbh-sans: "Kumbh Sans", sans-serif;
+  --font-roboto-slab: "Roboto Slab", serif;
+  --font-space-mono: "Space Mono", monospace;
+
+  /* Font sizes */
+  --fs-100: 1.2rem; /* 12px */
+  --fs-200: 1.4rem; /* 14px */
+  --fs-300: 1.6rem; /* 16px */
+  --fs-400: 1.8rem; /* 18px */
+  --fs-500: 2rem; /* 20px */
+  --fs-600: 2.4rem; /* 24px */
+  --fs-700: 3.2rem; /* 32px */
+  --fs-800: 4rem; /* 40px */
+  --fs-900: 4.8rem; /* 48px */
+
+  /* Line-heights (relative ratios) */
+  --lh-100: 1.2;
+  --lh-200: 1.3;
+  --lh-300: 1.4;
+  --lh-400: 1.5;
+  --lh-500: 1.6;
+  --lh-600: 1.8;
+  --lh-700: 2;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-kumbh-sans);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
