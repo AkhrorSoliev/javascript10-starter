@@ -1,0 +1,145 @@
+@import "./normalize.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-sans-v18-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/nunito-sans-v18-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/nunito-sans-v18-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/nunito-sans-v18-latin-800.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v19-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --font-family: "Nunito Sans", Arial, sans-serif;
+  --font-family-heading: "Inter", "Nunito Sans", Arial, sans-serif;
+  /* ===== Colors ===== */
+  /* Neutral */
+  --neutral-900: #19362a;
+  --neutral-600: #344c46;
+  --neutral-300: #cbd3d0;
+  --neutral-200: #e6eae8;
+  --neutral-100: #f0f2f1;
+  --neutral-0: #ffffff;
+
+  /* Orange */
+  --orange-500: #f28c3c;
+
+  /* Teal */
+  --teal-500: #62b2a3;
+
+  /* Indigo */
+  --indigo-500: #8286eb;
+
+  /* ===== Typography ===== */
+  /* Headings */
+  --font-h1-size: 7.2rem;
+  --font-h1-line: 1.05; /* 105% */
+
+  --font-h2-size: 6rem;
+  --font-h2-line: 1.05;
+
+  --font-h3-size: 4.8rem;
+  --font-h3-line: 1.05;
+
+  --font-h4-size: 3.6rem;
+  --font-h4-line: 1.05;
+
+  --font-h5-size: 2.4rem;
+  --font-h5-line: 1.05;
+
+  --font-h6-size: 2rem;
+  --font-h6-line: 1.05;
+
+  /* Body text */
+  --font-body-large-size: 1.8rem;
+  --font-body-large-line: 1.45; /* 145% */
+
+  --font-body-medium-size: 1.6rem;
+  --font-body-medium-line: 1.45;
+
+  --font-body-small-size: 1.4rem;
+  --font-body-small-line: 1.45;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-size: var(--font-body-large-size);
+  line-height: var(--font-body-large-line);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
