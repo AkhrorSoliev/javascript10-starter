@@ -1,0 +1,139 @@
+@import "./normalize.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/atkinson-hyperlegible-v11-latin-700.woff2") format("woff2");
+}
+
+:root {
+  /* ================= Colors ================= */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Grey */
+  --grey-100: #f2f2f2;
+  --grey-50: #fdfdfd;
+
+  /* Blue */
+  --blue-950: #15253b;
+  --blue-800: #243a59;
+  --blue-400: #7794b5;
+  --blue-350: #a1b5c8;
+  --blue-300: #cbd9e9;
+
+  /* Orange */
+  --orange-600: #f28c28;
+  --orange-300: #ffb84a;
+
+  /* ====== Typography - Atkinson Hyperlegible Bold ====== */
+  --font-family-primary: "Atkinson Hyperlegible", sans-serif;
+  --font-weight-bold: 700;
+
+  /* Text Presets */
+  --font-preset-1-size: 5.6rem; /* 56px */
+  --font-preset-1-line: 1.25;
+  --font-preset-1-spacing: 0;
+
+  --font-preset-2-size: 4.8rem; /* 48px */
+  --font-preset-2-line: 1.25;
+  --font-preset-2-spacing: 0;
+
+  --font-preset-3-size: 4.4rem; /* 44px */
+  --font-preset-3-line: 1.25;
+  --font-preset-3-spacing: 0;
+
+  --font-preset-4-size: 4rem; /* 40px */
+  --font-preset-4-line: 1.25;
+  --font-preset-4-spacing: 0;
+
+  --font-preset-5-size: 3.2rem; /* 32px */
+  --font-preset-5-line: 1.25;
+  --font-preset-5-spacing: 0;
+
+  --font-preset-6-size: 2.6rem; /* 26px */
+  --font-preset-6-line: 1.25;
+  --font-preset-6-spacing: 0;
+
+  --font-preset-7-size: 2.4rem; /* 24px */
+  --font-preset-7-line: 1.25;
+  --font-preset-7-spacing: 0;
+
+  --font-preset-8-size: 2rem; /* 20px */
+  --font-preset-8-line: 1.25;
+  --font-preset-8-spacing: 0;
+
+  --font-preset-9-size: 1.8rem; /* 18px */
+  --font-preset-9-line: 1.25;
+  --font-preset-9-spacing: 0;
+
+  --font-preset-10-size: 1.6rem; /* 16px */
+  --font-preset-10-line: 1.25;
+  --font-preset-10-spacing: 0;
+
+  --font-preset-11-size: 1.5rem; /* 15px */
+  --font-preset-11-line: 1.25;
+  --font-preset-11-spacing: 0;
+
+  --font-preset-12-size: 1.4rem; /* 14px */
+  --font-preset-12-line: 1.25;
+  --font-preset-12-spacing: 0;
+
+  --font-preset-13-size: 1.3rem; /* 13px */
+  --font-preset-13-line: 1.25;
+  --font-preset-13-spacing: 0.05rem; /* 5px => 0.5rem but designda 0.05rem ishlatish aniqroq */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-preset-9-size);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
