@@ -1,0 +1,130 @@
+@import "./normalize.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/jost-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/jost-v19-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/jost-v19-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/jost-v19-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --color-purple: #ad1fea;
+  --color-blue-1: #4661e6;
+  --color-blue-2: #4661e6;
+  --color-white: #ffffff;
+
+  --color-light-purple: #f2f4ff;
+  --color-pink: #f7f8fd;
+  --color-dark-blue: #3a4374;
+  --color-slate: #647196;
+
+  --color-red: #f49f85;
+  --color-cyan: #62bcfa;
+
+  /* === Typography === */
+  --font-family-jost: "Jost", sans-serif;
+
+  /* Font sizes */
+  --fs-h1: 2.4rem; /* 24px */
+  --fs-h2: 2rem; /* 20px */
+  --fs-h3: 1.8rem; /* 18px */
+  --fs-h4: 1.4rem; /* 14px */
+  --fs-body-1: 1.6rem; /* 16px */
+  --fs-body-2: 1.5rem; /* 15px */
+  --fs-body-3: 1.3rem; /* 13px */
+
+  /* Line heights (relative ratios) */
+  --lh-h1: 1.45; /* 35px / 24px */
+  --lh-h2: 1.45; /* 29px / 20px */
+  --lh-h3: 1.44; /* 26px / 18px */
+  --lh-h4: 1.43; /* 20px / 14px */
+  --lh-body-1: 1.44; /* 23px / 16px */
+  --lh-body-2: 1.47; /* 22px / 15px */
+  --lh-body-3: 1.46; /* 19px / 13px */
+
+  /* Letter Spacing */
+  --ls-h1: 0.25rem;
+  --ls-h2: 0.25rem;
+  --ls-h3: 0.25rem;
+  --ls-h4: 0.25rem;
+  --ls-body-1: 0;
+  --ls-body-2: 0;
+  --ls-body-3: 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-jost);
+  font-family: var(--fs-body-1);
+  line-height: var(--lh-body-1);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
